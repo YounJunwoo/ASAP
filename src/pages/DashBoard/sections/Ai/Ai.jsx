@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronDown1 } from '../../../../icons/ChevronDown1';
+import SendIcon from '../../../../icons/AiButton.svg'; // ✅ AiButton.svg import 추가
 import './style.css';
 
 export const Ai = () => {
@@ -13,7 +14,7 @@ export const Ai = () => {
 
   const goToChatPage = () => {
     if (command.trim() !== '') {
-      navigate('/chat', { state: { userCommand: command } }); // ✅ 수정됨
+      navigate('/chat', { state: { userCommand: command } });
     }
   };
 
@@ -55,12 +56,13 @@ export const Ai = () => {
         />
         <img
           className="send-button"
-          src="https://c.animaapp.com/kZX9QJ4w/img/send-button.svg"
+          src={SendIcon} // ✅ AiButton.svg 사용
           alt="send"
           onClick={goToChatPage}
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: 'pointer', width: '28px', height: '28px', marginLeft: '10px' }}
         />
       </div>
     </div>
   );
 };
+
