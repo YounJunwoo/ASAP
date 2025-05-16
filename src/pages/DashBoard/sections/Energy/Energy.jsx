@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export const Energy = () => {
+const Energy = () => {
   return (
     <div className="energy">
       <div className="enery-topic">현재 에너지 사용량</div>
@@ -48,3 +48,4 @@ export const Energy = () => {
     </div>
   );
 };
+export default Energy;

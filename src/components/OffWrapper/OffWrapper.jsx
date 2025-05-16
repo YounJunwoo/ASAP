@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const OffWrapper = ({ className }) => {
+const OffWrapper = ({ className }) => {
   return (
     <div className={`off-wrapper ${className}`}>
       <div className="ellipse-7" />
@@ -14,3 +14,4 @@ export const OffWrapper = ({ className }) => {
   );
 };
 
+export default OffWrapper;

@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const OffVariant = ({ className }) => {
+const OffVariant = ({ className }) => {
   return (
     <div className={`off-variant ${className}`}>
       <div className="manual-text-wrapper">
@@ -18,3 +18,4 @@ export const OffVariant = ({ className }) => {
   );
 };
 
+export default OffVariant;

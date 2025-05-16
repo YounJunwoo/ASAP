@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './style.css';
 
-export const FormLogin = ({
+const FormLogin = ({
   className,
   text = '이메일',
   text1 = '이메일을 입력하세요.',
@@ -15,7 +15,8 @@ export const FormLogin = ({
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault(); // 폼 제출 시 새로고침 방지
     if (email && password) {
       navigate(to); // 예: "/dashboard"
     } else {
@@ -24,7 +25,7 @@ export const FormLogin = ({
   };
 
   return (
-    <div className={`form-log-in ${className || ''}`}>
+    <form onSubmit={handleLogin} className={`form-log-in ${className || ''}`}>
       {/* 이메일 입력 */}
       <div className="input-field">
         <label className="label">{text}</label>
@@ -50,20 +51,21 @@ export const FormLogin = ({
       </div>
 
       {/* 로그인 버튼 */}
-      <button className="button" onClick={handleLogin}>
+      <button type="submit" className="button">
         {text3}
       </button>
 
       {/* 하단 버튼 */}
       <div className="button-group-2">
-        <Link to="/screen2" className="sub-button">
+        <Link to="/signup" className="sub-button">
           회원가입
         </Link>
         <Link to="/findpassword" className="sub-button">
           비밀번호 찾기
         </Link>
       </div>
-    </div>
+    </form>
   );
 };
 
+export default FormLogin;

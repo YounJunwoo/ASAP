@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const Logout = ({ className }) => {
+const Logout = ({ className }) => {
   return (
     <div className={`logout ${className}`}>
       <div className="overlap-group-3">
@@ -21,3 +21,4 @@ export const Logout = ({ className }) => {
     </div>
   );
 };
+export default Logout;

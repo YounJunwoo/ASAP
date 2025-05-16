@@ -5,7 +5,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 
 import React from "react";
 
-export const ChevronDown1 = ({ className }) => {
+const ChevronDown1 = ({ className }) => {
   return (
     <svg
       className={`chevron-down-1 ${className}`}
@@ -26,5 +26,5 @@ export const ChevronDown1 = ({ className }) => {
     </svg>
   );
 };
-
+export default ChevronDown1;
 

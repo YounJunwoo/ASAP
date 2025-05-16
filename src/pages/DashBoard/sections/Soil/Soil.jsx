@@ -1,8 +1,8 @@
 import React from "react";
-import { SoilDataChart } from "../../../../components/SoilDataChart";
+import SoilDataChart from '../../../../components/SoilDataChart/SoilDataChart'; // ✅
 import "./style.css";
 
-export const Soil = () => {
+const Soil = () => {
   return (
     <div className="soil">
       <div className="soil-topic">
@@ -19,4 +19,4 @@ export const Soil = () => {
       <div className="ph-label">pH</div>
     </div>
   );
-};
+};export default Soil;

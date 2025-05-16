@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const Component = ({ className }) => {
+const Component = ({ className }) => {
   return (
     <div className={`component ${className}`}>
       <div className="overlap-group-4">
@@ -17,3 +17,4 @@ export const Component = ({ className }) => {
     </div>
   );
 };
+export default Component;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export const UsageStatus = () => {
+const UsageStatus = () => {
   return (
     <div className="usage-status">
       <p className="usage-status-topic">
@@ -158,3 +158,4 @@ export const UsageStatus = () => {
     </div>
   );
 };
+export default UsageStatus;

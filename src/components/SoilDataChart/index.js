@@ -1,1 +1,0 @@
-export { SoilDataChart } from "./SoilDataChart";

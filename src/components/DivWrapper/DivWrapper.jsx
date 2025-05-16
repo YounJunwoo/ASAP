@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const DivWrapper = ({
+const DivWrapper = ({
   className,
   divClassName,
   text = "현재 기온을 알려줘",
@@ -17,3 +17,4 @@ export const DivWrapper = ({
     </div>
   );
 };
+export default DivWrapper;

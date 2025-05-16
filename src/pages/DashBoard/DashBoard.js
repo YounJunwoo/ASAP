@@ -1,62 +1,48 @@
-import React from "react";
-import { Actuator } from "./sections/Actuator";
-import { Ai } from "./sections/Ai";
-import { Energy } from "./sections/Energy";
-import { Soil } from "./sections/Soil";
-import { UsageStatus } from "./sections/UsageStatus";
-import { Weather } from "./sections/Weather";
-import "./style.css";
+import React from 'react';
+import Actuator from './sections/Actuator/Actuator';
+import Ai from './sections/Ai/Ai';
+import Energy from './sections//Energy/Energy';
+import Soil from './sections/Soil/Soil';
+import UsageStatus from './sections/UsageStatus/UsageStatus';
+import Weather from './sections/Weather/Weather';
 
-const DashBoard = ({ sensorData }) => {
+import './style.css';
+
+// 이름 수정: Dashboard → DashBoard
+const DashBoard = () => {
   return (
-    <div className="dashboard-content">
-      {/* 1행: 현재기온 + 명령어 입력 */}
-      <div className="row row-1">
+    <div className="dashboard" data-model-id="38:787">
+      <div className="div-3">
+        <Soil />
+        <div className="temperature-2">
+          <div className="text-wrapper-31">23</div>
+          <div className="text-wrapper-32">°C</div>
+          <div className="text-wrapper-33">온도</div>
+        </div>
+        <div className="humidity">
+          <div className="text-wrapper-32">%</div>
+          <div className="text-wrapper-33">습도</div>
+          <div className="text-wrapper-31">68</div>
+        </div>
+        <div className="co">
+          <div className="topic">CO₂농도</div>
+          <div className="text-wrapper-31">527</div>
+          <div className="unit">ppm</div>
+        </div>
+        <div className="insolation">
+          <div className="insolation-unit">kWh/㎡</div>
+          <div className="insolation-topic">일사량</div>
+          <div className="insolation-data">1.824</div>
+        </div>
+        <UsageStatus />
+        <Actuator />
+        <Energy />
         <Weather />
         <Ai />
       </div>
-
-      {/* 2행: 토양환경 */}
-      <div className="row row-2">
-        <div className="soil-wrapper">
-          <Soil />
-        </div>
-      </div>
-
-      {/* 3행: 센서 카드들 */}
-      <div className="row row-3 sensor-row">
-        <div className="sensor-card">
-          <div className="label">온도</div>
-          <div className="value">23°C</div>
-        </div>
-        <div className="sensor-card">
-          <div className="label">습도</div>
-          <div className="value">68%</div>
-        </div>
-        <div className="sensor-card">
-          <div className="label">CO₂농도</div>
-          <div className="value">527 ppm</div>
-        </div>
-        <div className="sensor-card">
-          <div className="label">일사량</div>
-          <div className="value">1.824 kWh/㎡</div>
-        </div>
-      </div>
-
-      {/* 4행: 에너지, 사용현황, 제어시스템 */}
-      <div className="row row-4">
-        <Energy />
-        <UsageStatus />
-        <Actuator />
-      </div>
-
-      {/* 디버깅용 sensorData 출력 */}
-      <pre style={{ marginTop: "40px", background: "#eee", padding: "10px" }}>
-        {JSON.stringify(sensorData, null, 2)}
-      </pre>
     </div>
   );
 };
 
+// 이름 통일
 export default DashBoard;
-

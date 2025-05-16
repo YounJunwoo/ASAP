@@ -4,7 +4,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
 
-export const FormForgotPassword = () => {
+const FormForgotPassword = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -30,3 +30,4 @@ export const FormForgotPassword = () => {
     </div>
   );
 };
+export default FormForgotPassword;

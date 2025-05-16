@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export const Weather = () => {
+const Weather = () => {
   return (
     <div className="weather">
       <div className="overlap-5">
@@ -30,3 +30,4 @@ export const Weather = () => {
     </div>
   );
 };
+export default Weather;

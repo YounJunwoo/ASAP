@@ -4,7 +4,7 @@ import './style.css';
 import SendIcon from '../../icons/AiButton.svg'; // 챗봇 아이콘 & 전송 아이콘 공통 사용
 import CloseIcon from '../../icons/CloseIcon.svg'; // 닫기 버튼 아이콘
 
-export const Screen2 = () => {
+const Chatting = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [message, setMessage] = useState('');
@@ -111,3 +111,4 @@ export const Screen2 = () => {
     </div>
   );
 };
+export default Chatting;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { OffVariant } from '../../../../components/OffVariant';
+import OffVariant from '../../../../components/OffVariant/OffVariant'; // ✅ 파일까지 지정
+
 import './style.css';
 
-export const Actuator = () => {
+const Actuator = () => {
   const [isManual, setIsManual] = useState(true);
   const [pumpOn, setPumpOn] = useState(false);
   const [fanOn, setFanOn] = useState(false);
@@ -66,3 +67,4 @@ export const Actuator = () => {
     </div>
   );
 };
+export default Actuator;

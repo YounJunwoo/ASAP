@@ -6,10 +6,11 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const TextLink = ({ text = "Text Link", className }) => {
+const TextLink = ({ text = "Text Link", className }) => {
   return (
     <div className={`text-link ${className}`}>
       <div className="text-wrapper-18">{text}</div>
     </div>
   );
 };
+export default TextLink;

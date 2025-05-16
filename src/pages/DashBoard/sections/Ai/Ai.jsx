@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown1 } from '../../../../icons/ChevronDown1';
+import ChevronDown1 from '../../../../icons/ChevronDown1/ChevronDown1';
 import SendIcon from '../../../../icons/AiButton.svg'; // ✅ AiButton.svg import 추가
 import './style.css';
 
-export const Ai = () => {
+const Ai = () => {
   const [command, setCommand] = useState('');
   const [selectedCrop, setSelectedCrop] = useState('적상추');
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -59,10 +59,16 @@ export const Ai = () => {
           src={SendIcon} // ✅ AiButton.svg 사용
           alt="send"
           onClick={goToChatPage}
-          style={{ cursor: 'pointer', width: '28px', height: '28px', marginLeft: '10px' }}
+          style={{
+            cursor: 'pointer',
+            width: '28px',
+            height: '28px',
+            marginLeft: '10px',
+          }}
         />
       </div>
     </div>
   );
 };
 
+export default Ai;

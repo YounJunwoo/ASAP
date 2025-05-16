@@ -7,7 +7,7 @@ import React from "react";
 import { Size20 } from "../../icons/Size20";
 import "./style.css";
 
-export const AccordionItem = ({
+const AccordionItem = ({
   title = "Title",
   content = "Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.",
   state,
@@ -27,4 +27,4 @@ export const AccordionItem = ({
   );
 };
 
-
+export default AccordionItem;
