@@ -1,0 +1,52 @@
+.weather {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.overlap-5, .overlap-6 {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-topic {
+  font-family: 'Inter', Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.city-temp-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.city-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.temperature {
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.wind-speed-inline {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}

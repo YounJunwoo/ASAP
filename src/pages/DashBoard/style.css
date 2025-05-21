@@ -1,0 +1,148 @@
+/* 공통 박스 스타일 */
+.box-common {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* 전체 레이아웃 */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e7f7e4;
+  overflow: hidden;
+}
+
+.dashboard-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.content-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  height: 90%;
+}
+
+/* 센서 + 현재기온 묶음 */
+.sensor-weather-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  gap: 20px;
+  min-height: 100%;
+}
+
+/* 현재기온 박스 */
+.weather-box {
+  flex: 2;
+  min-height: 100%;
+}
+
+/* 사이드 정보 영역 */
+.side-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20px;
+}
+
+/* 개별 박스들 (공통 스타일은 box-common으로 대체) */
+.weather,
+.usage-status,
+.actuator {
+  flex: 1;
+  min-height: 200px;
+  width: 100%;
+  height: 70%;
+  position: static;
+  border-radius: 5px;
+}
+
+/* 센서 카드 그룹 */
+.sensor-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* 센서 카드 스타일 */
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  flex: 0 0 160px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.card-unit {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 반응형 센서 카드 조정 */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+.weather-box {
+  flex: 2;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+}

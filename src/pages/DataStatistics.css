@@ -1,0 +1,35 @@
+.dataStatistics {
+  padding: var(--gap);
+  box-sizing: border-box;
+}
+
+.dataBoxGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .dataBoxGrid {
+    gap: 24px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dataBoxGrid {
+    gap: 12px;
+    padding: 8px;
+  }
+}
+
+.dataStatistics h1 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+:root {
+  --box-gap: 20px; /* 모든 간격 20px로 통일 */
+}

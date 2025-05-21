@@ -1,0 +1,104 @@
+.usage-status {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.usage-status-topic {
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #212121;
+}
+
+.frame {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  height: 40%;
+}
+
+.column-text,
+.column-text-2,
+.column-text-3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title-cell,
+.title-cell-2,
+.title-cell-3 {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f8f8;
+}
+
+.body-cell,
+.body-cell-2 {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cell-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  flex: 1;
+}
+
+.used-icon,
+.unused-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.used-icon {
+  background-color: #006639;
+}
+
+.unused-icon {
+  background-color: #c12525ed;
+}
+
+.column-title-wrapper,
+.text-wrapper-3 {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.column-title,
+.column-title-2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.text-wrapper-5 {
+  font-size: 14px;
+  color: #000000;
+}
+
+.used,
+.unused {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+  display: inline-block;
+  margin-right: 16px;
+}
